@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolás Lorenzatti Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries..css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nicolás Lorenzatti</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburguer-nav">
+        <div class="logo">Nicolas Lorenzatti</div>
+        <div class="hamburguer-menu">
+            <div class="hamburguer-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre mí</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile.jpg" alt="NicolasLorenzatti picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hola, yo soy</p>
+            <h1 class="title">Nicolás Lorenzatti</h1>
+            <p class="section__text__p2">Desarrollador Frontend</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cvNicolasLorenzatti.pdf')">Descargar CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contacto</button>  
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/nicolas-lorenzatti92/'">
+                <img src="./assets/github.png" alt="My github profile"
+                class="icon" onclick="location.href='https://github.com/Nlorenzatti'">
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#about'">
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Más sobre mi</p>
+        <h1 class="title"></h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="assets/about-picture.jpg" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experiencia</h3>
+                        <p>Junior<br/> Desarrollador Frontend</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/education.png" alt="education icon" class="icon">
+                        <h3>Educación</h3>
+                        <p>Universitario<br/> Ingeniero en sistemas de información</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, adipisci? Illo sapiente corrupti cumque omnis numquam nam. Doloribus ab atque nulla quisquam, aperiam inventore, in, quibusdam hic neque ratione accusamus.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explora</p>
+        <h1 class="title">Experiencia</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Desarrollador Frontend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/html-5.png" alt="experience" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/css-3.png" alt="experience" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                               
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/javascript.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/angular.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Angular</h3>
+                                      
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/typescript.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Typescript</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/bootstrap.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                               
+                            </div>
+                        </article>
+                    </div>            
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Desarrollador Backend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/java.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                               
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/postgre.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Postgresql</h3>
+                               
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/nodejs.png" alt="experience" class="icon">
+                            <div>
+                                <h3>NodeJs</h3>
+                                
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/git.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                               
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/springboot.png" alt="experience" class="icon">
+                            <div>
+                                <h3>Spring Framework</h3>
+                               
+                            </div>
+                        </article>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Navega por mis</p>
+        <h1 class="title">Proyectos</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <!-- Inicia el contenedor Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- Cada proyecto dentro de un swiper-slide -->
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/PedidosAppImg.jpg" alt="project 1" class="project-img">
+                                        <div class="capa">
+                                            <h2>Pedido de comidas</h2>
+                                            <p>Es un proyecto creado para pedidos de comida adaptable a cualquier negocio</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/pedidosApp'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://pedidosappnal.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repite la misma estructura para cada proyecto -->
+                         <!--
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/project-2.png" alt="project 2" class="project-img">
+                                        <div class="capa">
+                                            <h2>App de Presupuesto</h2>
+                                            <p>Proyecto creado con angular donde podemos tener un control de ingresos y egresos</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/TareasImg.jpg" alt="project 3" class="project-img">
+                                        <div class="capa">
+                                            <h2>App de tareas</h2>
+                                            <p>Proyecto creado con angular donde podemos realizar un listado de tareas y se guardan en localStorage</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/listaTareas-angular'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://lista-tareas-ang-17.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/LandingImg.jpg" alt="project 4" class="project-img">
+                                        <div class="capa">
+                                            <h2>Landing Page</h2>
+                                            <p>Landing page creada con angular utilizando un API para mostrar los productos</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/SPAngular17Prueba'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://spangular.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/project-3.png" alt="project 5" class="project-img">
+                                        <div class="capa">
+                                            <h2>App libreria</h2>
+                                            <p>App de libreria donde puedo cargar libros con sus respectivas fotos</p>
+                                            <div class="tecnologias">iconos</div>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/Lorenzaflix.png" alt="project 6" class="project-img">
+                                        <div class="capa">
+                                            <h2>Lorenzaflix</h2>
+                                            <p>Utilización de un carrousel con la tematica de netflix</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/lorenzaflixJS'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://lorenzaflix.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/CalculadoraImg.jpg" alt="project 7" class="project-img">
+                                        <div class="capa">
+                                            <h2>Calculadora</h2>
+                                            <p>Realización de una calculadora en javascript</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/calculator'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://calculatornal.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/climaImg.jpg" alt="project 8" class="project-img">
+                                        <div class="capa">
+                                            <h2>AppClima</h2>
+                                            <p>La aplicación cuenta con un buscador de localidad y conectada a una API</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/app-clima-js'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://appclimanal.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/maguitoImg.jpg" alt="project 9" class="project-img">
+                                        <div class="capa">
+                                            <h2>Maguito</h2>
+                                            <p>Maguito que responde preguntas, adivina tu futuro!</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/maguitoJs'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://maguitonal.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="details-container color-container">
+                                <div class="project-container">
+                                    <figure>
+                                        <img src="assets/projects/FlexpageImg.png" alt="project 10" class="project-img">
+                                        <div class="capa">
+                                            <h2>FlexboxWeb</h2>
+                                            <p>Creación de una web utilizando flexbox y el efecto parallax</p>
+                                        </div>
+                                    </figure>
+                                    <div class="btn-container">
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Nlorenzatti/flexPage-html'">Github</button>
+                                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://lorenzaflix.netlify.app/'">Probar App</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Espacio para agregar proyectos -->
+                    </div>
+                    <!-- Controles de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- Fin del contenedor Swiper -->
+            </div>
+        </div>
+        <img src="assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    
+    <section id="contact">
+        <p class="section__text__p1">Para contactarme</p>
+        <h1 class="title">Contacto</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="email icon" class="icon-mail">
+                <p><a href="mailto:nicolasnoetinger92@gmail.com">nicolasnoetinger92@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="linkedin icon" class="icon">
+                <p><a href="https://www.linkedin.com/in/nicolas-lorenzatti92/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nicolás Lorenzatti. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>  
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+          slidesPerView: 2,            // Muestra una diapositiva a la vez
+          spaceBetween: 20,            // Espacio entre las diapositivas
+          loop: true,   
+          autoplay: {
+            delay: 3000, // Tiempo entre cada slide (3 segundos)
+            disableOnInteraction: false, // El autoplay no se detendrá cuando el usuario interactúe con el carrusel
+            },               // Habilitar el bucle para que las diapositivas se repitan
+          navigation: {
+            nextEl: '.swiper-button-next',  // Selector para el botón de "siguiente"
+            prevEl: '.swiper-button-prev',  // Selector para el botón de "anterior"
+          },
+        });
+      </script>
+      
+
+     
+</body>
+</html>
